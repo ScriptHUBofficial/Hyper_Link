@@ -9,22 +9,22 @@ import threading
 #╚═▀▀▀══╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝
                                                                                               
 cookies = {
-    'xf_csrf': '***************',
-    'xf_session': '***************',
+    'xf_csrf': '***********************',
+    'xf_session': '********************',
 }
 
 headers = {
-    'authority': '***************',
-    'accept': '***************',
+    'authority': '*********************',
+    'accept': '************************',
     'accept-language': '***************',
-    'cache-control': '***************',
+    'cache-control': '*****************',
     # Requests sorts cookies= alphabetically
-    'cookie': '***************',
-    'origin': '***************',
-    'referer': '***************',
-    'sec-fetch-dest': '***************',
-    'sec-fetch-mode': '***************',
-    'sec-fetch-site': '***************',
+    'cookie': '************************',
+    'origin': '************************',
+    'referer': '***********************',
+    'sec-fetch-dest': '****************',
+    'sec-fetch-mode': '****************',
+    'sec-fetch-site': '****************',
     'sec-fetch-user': '?1',
     'sec-gpc': '1',
     'upgrade-insecure-requests': '1',
@@ -32,9 +32,9 @@ headers = {
 }
 
 data = {
-    '_xfToken': '1659565661,1cd6d456144a5f5f975a247e4b2914f1',
-    'login': 'asasdasdasdsa',
-    'password': 'asdsadsad',
+    '_xfToken': '******************************',
+    'login': '*********************************',
+    'password': '******************************',
     'remember': '1',
     '_xfRedirect': 'https://***************.com/',
 }
