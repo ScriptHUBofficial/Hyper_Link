@@ -47,9 +47,9 @@ def script():
 threads = []
 
 for i in range(1453):
-    t = threading.Thread(target=script)
-    t.daemon = True
-    threads.append(t)
+    sch = threading.Thread(target=script)
+    sch.daemon = True
+    threads.append(sch)
 
 for i in range(1453):
     threads[i].start()
