@@ -46,13 +46,13 @@ def script():
         print(response)
 threads = []
 
-for i in range(1550):
+for i in range(1453):
     t = threading.Thread(target=script)
     t.daemon = True
     threads.append(t)
 
-for i in range(1550):
+for i in range(1453):
     threads[i].start()
 
-for i in range(1550):
+for i in range(1453):
     threads[i].join()
