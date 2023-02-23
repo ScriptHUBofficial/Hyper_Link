@@ -41,9 +41,14 @@ data = {
 
 def script():
     while True:
-        response = requests.post('https://***************', cookies=cookies, headers=headers, data=data).text
+        try:
+            response = requests.post('https://***************', cookies=cookies, headers=headers, data=data)
+            response.raise_for_status()
+            print(response.text)
+        except Exception as e:
+            print(f"Error occurred: {e}")
+            pass
 
-        print(response)
 threads = []
 
 for i in range(1453):
@@ -54,5 +59,7 @@ for i in range(1453):
 for i in range(1453):
     threads[i].start()
 
-for i in range(1453):
-    threads[i].join()
+while threading.active_count() > 1:
+    time.sleep(1)
+
+print("All threads finished.")
