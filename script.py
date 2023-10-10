@@ -40,6 +40,13 @@ data = {
     '_xfRedirect': 'https://***************.com/',
 }
 
+
+# user agent method 
+#user_agents = []
+#with open('useragent.txt', 'r') as file:
+#    user_agents = [line.strip() for line in file]
+
+# proxy off
 def script():
     while True:
         try:
@@ -49,6 +56,25 @@ def script():
         except Exception as e:
             print(f"Error occurred: {e}")
             pass
+
+#proxy on
+# def script():
+#     while True:
+#         try:
+#             random_user_agent = random.choice(user_agents)
+#             
+#             headers['user-agent'] = random_user_agent 
+#             
+#             proxies = {'http': proxy_url, 'https': proxy_url}
+#             
+#             response = requests.post('https://***************', headers=headers, data=data, proxies=proxies) #verify=False <- ssl pass)
+#             response.raise_for_status()
+#             print(response.text)
+#         except Exception as e:
+#             print(f"Hata oluştu: {e}")
+#             pass
+
+
 
 threads = []
 
